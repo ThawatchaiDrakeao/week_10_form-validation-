@@ -67,8 +67,8 @@ function LoginForm({
       </form>
 
       <footer className="credit">
-        Made with love by JSD TH
-        <span>สร้างด้วย React, validation และ localStorage</span>
+        Made with Van Dark Fong
+        <span>สร้างด้วย React, validation</span>
       </footer>
     </article>
   )
