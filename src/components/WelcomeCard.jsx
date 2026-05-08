@@ -8,7 +8,7 @@ function WelcomeCard({ email, onLogout }) {
       </div>
       <h1>Welcome!</h1>
       <p className="subtitle">
-        Login successful. / เข้าสู่ระบบสำเร็จ
+        You are signed in successfully. / คุณเข้าสู่ระบบเรียบร้อยแล้ว
       </p>
 
       <div className="email-box">

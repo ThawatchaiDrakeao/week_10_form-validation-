@@ -6,20 +6,22 @@
 }
 
 .panel {
-  width: min(100%, 560px);
+  width: min(100%, 620px);
 }
 
 .login-card,
 .welcome-card {
-  background: rgba(247, 250, 252, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 28px;
-  box-shadow: 0 24px 60px rgba(7, 36, 31, 0.16);
-  backdrop-filter: blur(12px);
+  background: rgba(243, 237, 227, 0.9);
+  border: 1px solid rgba(255, 248, 235, 0.42);
+  border-radius: 32px;
+  box-shadow:
+    0 28px 80px rgba(4, 6, 11, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(16px);
 }
 
 .login-card {
-  padding: 40px 38px 28px;
+  padding: 42px 40px 30px;
 }
 
 .welcome-card {
@@ -34,7 +36,7 @@
 
 .eyebrow {
   margin: 0 0 12px;
-  color: #0f766e;
+  color: #8a5a2f;
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -44,14 +46,14 @@
 .title-group h1,
 .welcome-card h1 {
   margin: 0;
-  color: #0f172a;
+  color: #1f2937;
   font-size: clamp(2.2rem, 5vw, 3.2rem);
   line-height: 1;
 }
 
 .subtitle {
   margin: 14px 0 0;
-  color: #475569;
+  color: #5a4633;
   font-size: 1rem;
   line-height: 1.65;
 }
@@ -62,7 +64,7 @@
 }
 
 .login-form label {
-  color: #334155;
+  color: #433322;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -70,12 +72,12 @@
 .login-form input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #cbd5e1;
+  border: 1px solid rgba(123, 93, 64, 0.22);
   border-radius: 16px;
   padding: 16px 18px;
   font-size: 1rem;
-  color: #0f172a;
-  background: #fff;
+  color: #1f2937;
+  background: rgba(255, 252, 247, 0.96);
   outline: none;
   transition:
     border-color 0.2s ease,
@@ -84,8 +86,8 @@
 }
 
 .login-form input:focus {
-  border-color: #14b8a6;
-  box-shadow: 0 0 0 5px rgba(20, 184, 166, 0.15);
+  border-color: #9a6232;
+  box-shadow: 0 0 0 5px rgba(154, 98, 50, 0.15);
   transform: translateY(-1px);
 }
 
@@ -124,13 +126,13 @@
 
 .ghost-button {
   padding: 12px 18px;
-  color: #2563eb;
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
+  color: #7a4a22;
+  background: rgba(255, 248, 235, 0.95);
+  border: 1px solid rgba(154, 98, 50, 0.22);
 }
 
 .ghost-button:hover {
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.14);
+  box-shadow: 0 10px 20px rgba(122, 74, 34, 0.16);
 }
 
 .submit-button,
@@ -141,38 +143,38 @@
 
 .submit-button {
   margin-top: 6px;
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
-  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.24);
+  background: linear-gradient(135deg, #8f5a31, #c48a51);
+  box-shadow: 0 16px 30px rgba(126, 77, 35, 0.3);
 }
 
 .logout-button {
   width: 100%;
   margin-top: 28px;
-  background: linear-gradient(135deg, #ef4444, #f43f5e);
-  box-shadow: 0 16px 30px rgba(244, 63, 94, 0.22);
+  background: linear-gradient(135deg, #3a4b63, #60758f);
+  box-shadow: 0 16px 30px rgba(40, 55, 79, 0.26);
 }
 
 .error-message {
   margin: 0;
   border-radius: 14px;
   padding: 12px 14px;
-  color: #991b1b;
-  background: #fee2e2;
-  border: 1px solid #fecaca;
+  color: #8c2c1e;
+  background: rgba(255, 238, 228, 0.92);
+  border: 1px solid rgba(208, 124, 83, 0.3);
   line-height: 1.5;
 }
 
 .credit {
   margin-top: 26px;
   text-align: center;
-  color: #0f172a;
+  color: #2b2118;
   font-size: 0.98rem;
 }
 
 .credit span {
   display: block;
   margin-top: 6px;
-  color: #64748b;
+  color: #7a6857;
   font-size: 0.9rem;
 }
 
@@ -183,28 +185,30 @@
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: linear-gradient(135deg, #10b981, #14b8a6);
+  background: linear-gradient(135deg, #936036, #d3a160);
   color: #fff;
   font-size: 2.5rem;
   font-weight: 800;
+  box-shadow: 0 18px 34px rgba(86, 52, 21, 0.26);
 }
 
 .email-box {
   margin-top: 24px;
   padding: 20px;
   border-radius: 20px;
-  background: #f8fafc;
+  background: rgba(255, 250, 242, 0.84);
+  border: 1px solid rgba(123, 93, 64, 0.14);
   text-align: left;
 }
 
 .email-box span {
   display: block;
-  color: #64748b;
+  color: #7a6857;
   margin-bottom: 10px;
 }
 
 .email-box strong {
-  color: #0f172a;
+  color: #1f2937;
   font-size: 1.25rem;
   word-break: break-word;
 }

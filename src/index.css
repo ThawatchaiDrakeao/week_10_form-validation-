@@ -1,12 +1,14 @@
 :root {
+  --app-background-image: url('/socrates-trial-background.jpg');
+  --app-background-fallback:
+    linear-gradient(135deg, rgba(7, 11, 19, 0.78), rgba(32, 21, 13, 0.55)),
+    radial-gradient(circle at top, rgba(236, 184, 82, 0.2), transparent 32%),
+    linear-gradient(135deg, #102033, #3b2718);
   font-family:
     'Segoe UI', 'Noto Sans Thai', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #0f172a;
-  background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.24), transparent 30%),
-    linear-gradient(135deg, #14b8a6, #22c55e);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,12 +21,46 @@
 
 html {
   min-height: 100%;
+  background: #09111b;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  color: #f8fafc;
+  background: #09111b;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  z-index: -2;
+  background-image:
+    linear-gradient(135deg, rgba(5, 9, 16, 0.7), rgba(22, 13, 8, 0.4)),
+    var(--app-background-image),
+    var(--app-background-fallback);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.03);
+  filter: saturate(0.92) contrast(1.04);
+}
+
+body::after {
+  z-index: -1;
+  background:
+    radial-gradient(circle at top left, rgba(228, 192, 128, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(154, 88, 31, 0.16), transparent 26%),
+    linear-gradient(180deg, rgba(9, 13, 22, 0.22), rgba(9, 13, 22, 0.72));
 }
 
 button,

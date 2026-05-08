@@ -10,8 +10,8 @@ function LoginForm({
   return (
     <article className="login-card">
       <div className="title-group">
-        <p className="eyebrow">React Form Validation UI</p>
-        <h1>Login Form</h1>
+        <p className="eyebrow">Thoughtful Form Validation</p>
+        <h1>Welcome Back</h1>
         <p className="subtitle">
           Enter your email and password to continue.
           <br />
@@ -67,8 +67,8 @@ function LoginForm({
       </form>
 
       <footer className="credit">
-        Made with Van Dark Fong
-        <span>สร้างด้วย React, validation</span>
+        Built with React and practical validation
+        <span>พัฒนาด้วย React และการตรวจสอบข้อมูลที่ใช้งานได้จริง</span>
       </footer>
     </article>
   )
