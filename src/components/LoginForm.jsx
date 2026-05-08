@@ -10,8 +10,8 @@ function LoginForm({
   return (
     <article className="login-card">
       <div className="title-group">
-        <p className="eyebrow">Thoughtful Form Validation</p>
-        <h1>Welcome Back</h1>
+        <p className="eyebrow">'The School of Athens'</p>
+        <h1>Welcome to <br /> 'The School of Athens'.</h1>
         <p className="subtitle">
           Enter your email and password to continue.
           <br />
@@ -67,8 +67,7 @@ function LoginForm({
       </form>
 
       <footer className="credit">
-        Built with React and practical validation
-        <span>พัฒนาด้วย React และการตรวจสอบข้อมูลที่ใช้งานได้จริง</span>
+      Crafted by Fong, a scholar at 'The School of Athens'        
       </footer>
     </article>
   )
